@@ -55,7 +55,7 @@ Com o pré-requisito instalado, rode no console:
 install.packages("tidyverse")
 ```
 
-> [!NOTE] Observação
+> [!NOTE] Observação\
 > Se houver erros, rode com o parâmetro `dependencies = TRUE`, ou seja:
 > 
 > ```{r}
@@ -71,14 +71,14 @@ tinytex::install_tinytex()
 
 É recomendado reiniciar o RStudio após instalar o tinytex, para ter certeza que foi instalado corretamente.
 
-> [!TIP] Observação
+> [!TIP] Observação\
 > Caso queira checar se a instalação do tinytex foi feita corretamente, rode no console:
 > ```{r}
 > tinytex::is_tinytex()
 > ```
 > Caso a instalação tenha sido realizada corretamente, o retorno do comando deve ser `TRUE`, caso contrário, reinstale o tinytex
 
-> [!IMPORTANT] Atenção
+> [!IMPORTANT] Atenção\
 > Caso o tinytex não tenha sido instalado corretamente (o retorno de `tinytex::is_tinytex()` é `FALSE`), tente reinstalar o pacote pelo gerenciador do R (`install.packages("tinytex")`) e pelo gerenciador do tinytex, da forma:
 > ```{r}
 > tinytex::install_tinytex(force = TRUE)
