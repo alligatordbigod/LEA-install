@@ -1,3 +1,5 @@
+_Inserir RTools apenas para windows_
+
 # Instalação LEA
 
 # Instalando o R, RStudio e programas de sistema **necessários**
