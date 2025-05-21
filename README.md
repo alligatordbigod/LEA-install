@@ -1,6 +1,7 @@
-_Inserir RTools apenas para windows_
+_Inserir slides de tales, inserir prints do ghostscript para windows_
 
-# Instalação LEA
+Este é um guia completo de instalação do Modelo LEA, isto é, considera que sua máquina ainda não tem nenhum pacote/requisito instalado.   
+Note que mesmo se sua máquina estiver com algumas partes instaladas, ainda é possível seguir o guia a partir de onde você têm disponível.  
 
 # Instalando o R, RStudio e programas de sistema **necessários**
 
@@ -55,11 +56,6 @@ Com isto, o R, RStudio e os pacotes de sistema necessários para instalar o Mode
 
 </details>
 
-<details>
-	<summary>flatpak</summary>
-Teste 5
-</details>
-
 # Instalando o Modelo LEA
 
 **Atenção:** Os seguintes passos consideram que **todos** os passos anteriores do guia estão feitos. **Mesmo que você já tenha o R e o RStudio instalados no seu sistema, existem outros programas que são necessários para utilizar o Modelo LEA que podem não estar**, então, caso esteja tendo problema, tenha certeza que todos os programas mencionados na seção anterior estão instalados.
@@ -67,7 +63,7 @@ Teste 5
 Os seguintes passos da instalação já serão **executados no console do RStudio**.  
 
 Pré-requisitos do R (RStudio) para instalar a **base** do Modelo LEA:
-- tidyverse (necessidade geral, apesar de não obrigatório para o Modelo LEA)
+- tidyverse (necessidade geral)
 - tinytex (para compilar o relatório e slides)
 - devtools (para importar e compilar o modelo)
 
