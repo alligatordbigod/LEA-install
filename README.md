@@ -1,4 +1,4 @@
-_Inserir slides de tales, inserir prints do ghostscript para windows_
+_Inserir prints do ghostscript para windows (meus slides)_
 
 Este é um guia completo de instalação do Modelo LEA, isto é, considera que sua máquina ainda não tem nenhum pacote/requisito instalado.   
 Note que mesmo se sua máquina estiver com algumas partes instaladas, ainda é possível seguir o guia a partir de onde você têm disponível.  
@@ -9,23 +9,37 @@ Mesmo que você já tenha o R e o RStudio instalados, podem haver programas aind
 
 <details open>
 	<summary>Windows (10 e 11)</summary>
-Teste
+
+Requisitos do sistema (programas que devem estar instalados no sistema para realizar a instalação do RStudio e do Modelo LEA):
+- [RTools](https://cran.r-project.org/bin/windows/Rtools/) (programa necessário para compilar pacotes do R)
+- [ghostscript](https://ghostscript.com/releases/gsdnld.html) (programa necessário para os slides)
+
+Para instalar o R, RStudio, e o RTools, siga as instruções nos [slides de Tales](source/instalacao_r_rstudio_latex.pdf).
+
+Para instalar o ghostscript, siga as instruções nos meus slides
+
 </details>
 
 <details>
 	<summary>Ubuntu, debian, Linux Mint e derivados (Linux, apt)</summary>
-Teste 2
+
+> [!info]
+> ESTA SEÇÃO AINDA ESTÁ SENDO TRABALHADA
+
 </details>
 
 <details>
 	<summary>Fedora RPM (Linux, yum, dnf)</summary>
-Teste 3
+
+> [!info]
+> ESTA SEÇÃO AINDA ESTÁ SENDO TRABALHADA
+
 </details>
 
-<details open>
+<details>
 	<summary>Arch (Linux, pacman, yay)</summary>
   
-Pré-requisitos do sistema (pacotes que devem estar instalados no sistema para realizar a instalação do RStudio e do Modelo LEA):
+Requisitos do sistema (pacotes que devem estar instalados no sistema para realizar a instalação do RStudio e do Modelo LEA):
  - AUR Helper (como o [yay](https://github.com/Jguer/yay), requisito para facilitar sua vida)
  - GCC-Fortran (requisito para compilar as bibliotecas do R)
  - [ghostscript](https://ghostscript.com/releases/gsdnld.html) (pacote do sistema, requisito para os slides)
