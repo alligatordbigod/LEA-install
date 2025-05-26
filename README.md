@@ -1,4 +1,11 @@
-_Inserir prints do ghostscript para windows (meus slides)_
+> ⚠️ Atenção
+>
+> Este guia teve como referência o [guia original de instalação do Modelo LEA](https://github.com/mnunes/modeloLEA), criado por Marcus Nunes
+> Além disso, o próprio modelo é de sua autoria.
+
+> ❔ Informação
+>
+> Este guia ainda está em processo de (lento) desenvolvimento
 
 Este é um guia completo de instalação do Modelo LEA, isto é, considera que sua máquina ainda não tem nenhum pacote/requisito instalado.   
 Note que mesmo se sua máquina estiver com algumas partes instaladas, ainda é possível seguir o guia a partir de onde você têm disponível.  
@@ -10,20 +17,20 @@ Mesmo que você já tenha o R e o RStudio instalados, podem haver programas aind
 <details open>
 	<summary>Windows (10 e 11)</summary>
 
-Requisitos do sistema (programas que devem estar instalados no sistema para realizar a instalação do RStudio e do Modelo LEA):
+Requisitos do sistema (programas que devem estar instalados no sistema para realizar a instalação do RStudio e/ou do Modelo LEA):
 - [RTools](https://cran.r-project.org/bin/windows/Rtools/) (programa necessário para compilar pacotes do R)
 - [ghostscript](https://ghostscript.com/releases/gsdnld.html) (programa necessário para os slides)
 
 Para instalar o R, RStudio, e o RTools, siga as instruções nos [slides de Tales](source/instalacao_r_rstudio_latex.pdf).
 
-Para instalar o ghostscript, siga as instruções nos meus slides
+Para instalar o ghostscript, siga as instruções nos [meus slides](source/slides_dia2_modeloLEA.pdf), dos slides 12 ao 18
 
 </details>
 
 <details>
 	<summary>Ubuntu, debian, Linux Mint e derivados (Linux, apt)</summary>
 
-> [!info]
+> ❔ Informação
 > ESTA SEÇÃO AINDA ESTÁ SENDO TRABALHADA
 
 </details>
@@ -31,7 +38,8 @@ Para instalar o ghostscript, siga as instruções nos meus slides
 <details>
 	<summary>Fedora RPM (Linux, yum, dnf)</summary>
 
-> [!info]
+> ❔ Informação
+>
 > ESTA SEÇÃO AINDA ESTÁ SENDO TRABALHADA
 
 </details>
