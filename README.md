@@ -31,8 +31,35 @@ Para instalar o ghostscript, siga as instruções nos [meus slides](source/slide
 	<summary>Ubuntu, debian, Linux Mint e derivados (Linux, apt)</summary>
 
 > ❔ Informação
+>
 > ESTA SEÇÃO AINDA ESTÁ SENDO TRABALHADA
+  
+> ⚠️ Atenção
+>
+> Com as informações desta seção ainda não é possível instalar o modelo LEA.  
+> Não estou tendo sorte tentando instalar via Linux Mint. Logo, esta seção ainda pode mudar gravemente.
+  
+Para instalar o R, rode no terminal:
 
+```{r}
+sudo apt install r-base
+```
+  
+_Note que este comando irá instalar uma versão muito antiga do R, existe uma forma de instalar a mais recente, mas só vou adicionar este comando na próxima versão do guia_  
+
+Para instalar o RStudio, abra [este link](https://posit.co/download/rstudio-desktop/), e baixe a versão de acordo com a sua versão do ubuntu, como sinalizado na imagem:  
+
+![](source/print9.png)
+
+Clique no link correspondente à sua versão do ubuntu, execute o arquivo baixado, e instale o pacote.  
+
+> ❔ Informação
+> 
+> Para verificar a sua atual versão do ubuntu, rode o comando no terminal:  
+> ```{bash}
+> cat /etc/upstream-release/lsb-release
+> ```
+  
 </details>
 
 <details>
