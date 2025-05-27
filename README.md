@@ -39,15 +39,80 @@ Para instalar o ghostscript, siga as instruções nos [meus slides](source/slide
 > Com as informações desta seção ainda não é possível instalar o modelo LEA.  
 > Não estou tendo sorte tentando instalar via Linux Mint. Logo, esta seção ainda pode mudar gravemente.
   
-Para instalar o R, rode no terminal:
+Para instalar o R, siga os passos, executando os comandos (cada linha separadamente) no terminal:
 
-```{r}
-sudo apt install r-base
+```{bash}
+sudo apt update
+sudo apt install software-properties-common dirmngr
+```
+
+_O comando acima atualiza os repositórios e instala alguns pacotes de sistema necessários_
+
+```{bash}
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys '95C0FAF38DB3CCAD0C080A7BDC78B2DDEABC47B7'
+```
+
+_O comando acima adiciona as credenciais de um repositório específico do R para ubuntu (e derivados)_
+
+```{bash}
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+```
+
+_O comando acima adiciona as credenciais do repositório padrão do R para ubuntu (e derivados)_
+
+```{bash}
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
+```
+
+_O comando acima adiciona o repositório padrão do R para ubuntu_
+
+Agora, pode ser que ainda tenha problemas para instalar o R, então vou dar um passo extra, que consiste em adicionar um repositório específico para sua versão do R.
+
+Para saber qual é a sua versão do ubuntu, rode o comando:
+
+```{bash}
+cat /etc/upstream-release/lsb-release
+```
+
+A versão do ubuntu tem um codinome,
+
+Se o codinome for noble, rode o comando:
+
+```{bash}
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu noble-cran40/"
+```
+
+Se o codinome for jammy, rode o comando:
+
+```{bash}
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu jammy-cran40/"
+```
+
+Se o codinome for focal, rode o comando:
+
+```{bash}
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
+```
+
+Por fim, atualize o apt novamente desta forma:
+
+```{bash}
+sudo apt update --allow-insecure-repositories
+```
+
+E então, instale o R, da forma:
+
+```{bash}
+sudo apt install r-base r-base-dev
 ```
   
-_Note que este comando irá instalar uma versão muito antiga do R, existe uma forma de instalar a mais recente, mas só vou adicionar este comando na próxima versão do guia_  
+Para checar a versão do R que foi instalada, rode:
 
-Para instalar o RStudio, abra [este link](https://posit.co/download/rstudio-desktop/), e baixe a versão de acordo com a sua versão do ubuntu, como sinalizado na imagem:  
+```{bash}
+R --version
+```
+
+Agora, para instalar o RStudio, abra [este link](https://posit.co/download/rstudio-desktop/), e baixe a versão de acordo com a sua versão do ubuntu, como sinalizado na imagem:  
 
 ![](source/print9.png)
 
@@ -59,6 +124,12 @@ Clique no link correspondente à sua versão do ubuntu, execute o arquivo baixad
 > ```{bash}
 > cat /etc/upstream-release/lsb-release
 > ```
+
+Para instalar o tidyverse dentro do R, é necessário instalar os pacotes de sistema (pelo terminal do linux):
+
+```{bash}
+sudo apt install libcurl4-openssl-dev libfontconfig1-dev libxml2-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+```
   
 </details>
 
